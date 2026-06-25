@@ -1875,7 +1875,28 @@ XI: {
     </div>`
             }
         };
-            
+
+const rutas = {
+    welcome: 'inicio',
+    I: 'matricula',
+    II: 'escalas-pago',
+    III: 'cobros-academicos',
+    IV: 'descuentos-beneficios',
+    V: 'convalidaciones',
+    VI: 'ciclo-0',
+    VII: 'nivelacion-universitaria',
+    VIII: 'examenes-suficiencia',
+    IX: 'cursos-extension',
+    X: 'idioma-ingles',
+    XI: 'reserva-renuncia-retiro',
+    XII: 'calendario-academico'
+};
+
+const rutasInversas = {};
+
+for (const key in rutas) {
+    rutasInversas[rutas[key]] = key;
+}
 
         // NAVEGACIÓN LATERAL
         function renderMenu() {
@@ -1893,6 +1914,9 @@ XI: {
         function renderContent(key) {
             const viewer = document.getElementById('viewer');
             viewer.innerHTML = db[key].html;
+
+            const ruta = rutas[key] || 'inicio';
+history.replaceState(null, '', '#' + ruta);
 
             document.querySelectorAll('#menu-container button').forEach(b => b.classList.remove('active-tab'));
             const btn = document.getElementById(`btn-${key}`);
@@ -1952,6 +1976,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dniGuardado) {
         entrarDirecto();
     }
+            const hash = window.location.hash
+        .replace('#', '')
+        .trim();
+
+    const key = rutasInversas[hash];
+
+    renderMenu();
+
+    if (key && db[key]) {
+        renderContent(key);
+    } else {
+        renderContent('welcome');
+    }
 };
 
 function ingresar() {
@@ -1983,8 +2020,8 @@ function entrarDirecto() {
 
 
         // INICIO
-        renderMenu();
-        renderContent('welcome');
+       // renderMenu();
+       // renderContent('welcome');
         
     </script>
 </body>
