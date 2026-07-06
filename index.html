@@ -125,11 +125,11 @@ h1, h2, h3, h4, .font-serif {
         <!-- TÍTULO -->
         <div>
             <h2 class="text-3xl text-gray-900 font-serif">
-                Guía para Ingresantes 26-2
+                <strong>Guía para Ingresantes 26-2</strong>
             </h2>
  
             <p class="text-sm text-gray-500 mt-2">
-                Bienvenido(a) a la Universidad ESAN
+                <strong>Bienvenido(a) a la Universidad ESAN</strong>
             </p>
         </div>
  
@@ -155,7 +155,7 @@ h1, h2, h3, h4, .font-serif {
             type="text" 
             id="dni" 
             maxlength="8"
-            placeholder="Ingresa tu DNI"
+            placeholder="Ingrese su número de DNI"
             class="w-full p-3 rounded-xl bg-white text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
         >
  
@@ -185,7 +185,7 @@ h1, h2, h3, h4, .font-serif {
         <div class="p-6 border-b border-white/20 flex items-center gap-3 cursor-pointer" onclick="renderContent('welcome')">
     		<div class="w-10 h-10 bg-white rounded flex items-center justify-center text-2xl font-bold text-[var(--esan-red)]">UE</div>
     		<div>
-       		 <h1 class="text-white text-lg leading-none">ESAN UNIVERSITY</h1>
+       		 <strong><h1 class="text-white text-lg leading-none">ESAN UNIVERSITY</h1></strong>
         	<p class="text-[10px] text-white/80 uppercase tracking-widest">Ingresantes 2026-2</p>
     		</div>
 		</div>
@@ -260,7 +260,7 @@ html:`
         </h1>
 
         <p class="text-gray-600 leading-relaxed">
-            En este catálogo interactivo encontrarás toda la información necesaria para iniciar tu vida universitaria en ESAN, así como los procedimientos, beneficios y servicios disponibles durante tu proceso de incorporación.
+            En este catálogo interactivo encontrarás toda la información necesaria para iniciar tu vida universitaria en ESAN, así como los procedimientos para absolver las consultas que puedas tener.
         </p>
 
     </div>
@@ -5678,13 +5678,13 @@ function ingresar() {
     const error = document.getElementById("error");
 
     if (!/^\d{8}$/.test(dni)) {
-        error.innerText = "Ingresa un DNI válido (8 dígitos)";
+        error.innerText = "Ingrese un DNI válido (8 dígitos)";
         error.classList.remove("hidden");
         return;
     }
 
     if (!check) {
-        error.innerText = "Debes aceptar el compromiso";
+        error.innerText = "Debe aceptar el compromiso de revisión";
         error.classList.remove("hidden");
         return;
     }
