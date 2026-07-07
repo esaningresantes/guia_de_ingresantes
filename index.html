@@ -3329,7 +3329,7 @@ html: `
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Cronograma y horario del Programa de Repaso Intensivo para el Examen de Suficiencia
+                <strong>Cronograma y horario del Programa de Repaso Intensivo para el Examen de Suficiencia</strong>
 
             </h3>
 
@@ -3492,41 +3492,30 @@ html: `
 
     </div>
 
-    <!-- IMPORTANTE -->
+   <!-- IMPORTANTE -->
 
-    <div class="glass rounded-2xl p-8 border-l-4 border-[var(--esan-red)]">
+<div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
 
-        <div class="flex items-center gap-3 mb-5">
+    <div class="flex items-center gap-3 mb-3">
 
-            <i data-lucide="info"
-               class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <i data-lucide="triangle-alert"
+           class="w-6 h-6 text-[var(--esan-red)]"></i>
 
-            <h3 class="text-xl font-serif text-gray-900">
-
-                <strong>Importante</strong>
-
-            </h3>
-
-        </div>
-
-        <div class="space-y-4 text-gray-700 leading-relaxed">
-
-            <p>
-
-                La apertura de horarios estará sujeta a la cantidad de estudiantes inscritos en cada versión del Programa de Nivelación Universitaria.
-
-            </p>
-
-            <p>
-
-                <strong>(**) Solicitar el enlace de inscripción a tu asesor de inscripciones o asesor de ventas.</strong>
-
-            </p>
-
-        </div>
+        <h3 class="text-lg font-serif text-gray-900">
+            <strong>Importante</strong>
+        </h3>
 
     </div>
 
+    <p class="text-gray-700 leading-relaxed mb-4">
+        La apertura de horarios estará sujeta a la cantidad de estudiantes inscritos en cada versión del Programa de Nivelación Universitaria (PNU).
+    </p>
+
+    <p class="text-gray-700 leading-relaxed">
+        <strong>(**) Solicita el enlace de inscripción a tu asesor(a) de inscripciones o asesor(a) de ventas.</strong>
+    </p>
+
+</div>
 </div>
 
 `
@@ -3573,55 +3562,51 @@ html:`
 
     </div>
 
+<!-- BENEFICIO -->
 
-    <!-- BENEFICIO -->
+<div class="rounded-2xl overflow-hidden shadow-xl">
 
-    <div class="rounded-2xl overflow-hidden shadow-xl">
+    <div class="bg-gradient-to-r from-[#D64545] to-[#C93A3A] px-8 py-8 text-white">
 
-        <div class="bg-gradient-to-r from-[#C93A3A] to-[#B52F2F] px-8 py-8 text-white">
+        <div class="flex items-center gap-4">
 
-            <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
 
-                <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
-
-                    <i data-lucide="gift" class="w-7 h-7"></i>
-
-                </div>
-
-                <div>
-
-                    <p class="uppercase tracking-widest text-white/80 text-sm">
-                        Beneficio para prematriculados
-                    </p>
-
-                    <h3 class="text-2xl font-serif mt-1">
-                        Exámenes sin costo
-                    </h3>
-
-                    <p class="text-white/90 mt-2">
-                        Los estudiantes prematriculados rinden los exámenes de suficiencia de manera gratuita.
-                    </p>
-
-                </div>
+                <i data-lucide="gift" class="w-7 h-7"></i>
 
             </div>
 
-            <div class="mt-6 inline-flex items-center gap-3 bg-white/15 rounded-xl px-5 py-3">
+            <div>
 
-                <span class="text-lg">
-                    💰
-                </span>
+                <p class="uppercase tracking-widest text-white/80 text-sm">
+                    <strong>Beneficio para prematriculados</strong>
+                </p>
 
-                <span class="font-semibold text-lg">
-                    Costo del examen: S/ 0.00
-                </span>
+                <h3 class="text-2xl font-serif mt-1">
+                    Participación gratuita en los exámenes de suficiencia
+                </h3>
+
+                <p class="text-white/90 mt-2">
+                    Los estudiantes prematriculados podrán rendir los exámenes de suficiencia sin costo, hasta en dos oportunidades.
+                </p>
 
             </div>
 
         </div>
 
+        <div class="mt-6 inline-flex items-center gap-3 bg-white/15 rounded-xl px-5 py-3">
+
+            <i data-lucide="badge-percent" class="w-6 h-6"></i>
+
+            <span class="font-semibold text-lg">
+                Costo para prematriculados: S/ 0.00
+            </span>
+
+        </div>
+
     </div>
 
+</div>
 
     <!-- ¿QUÉ SON? -->
 
@@ -3634,7 +3619,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                ¿Qué son los exámenes de suficiencia?
+                <strong>¿Qué son los exámenes de suficiencia?</strong>
 
             </h3>
 
@@ -3644,7 +3629,7 @@ html:`
 
             <p>
 
-                Los ingresantes al semestre académico <strong>2026-2</strong> rendirán evaluaciones de suficiencia en <strong>Matemáticas</strong> y <strong>Comunicaciones</strong>, con el propósito de identificar si poseen las competencias necesarias para ser exonerados de los cursos de preformación.
+                Los alumnos ingresantes al semestre académico <strong>2026-2</strong> rendirán un Examen de Suficiencia en <strong>Matemáticas</strong> y <strong>Comunicaciones</strong>, con el propósito de identificar si poseen las competencias necesarias para ser exonerados de los cursos de preformación.
 
             </p>
 
@@ -3694,7 +3679,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Cronograma de evaluaciones
+                <strong><Cronograma y horarios de los Exámenes de Suficiencia></strong>
 
             </h3>
 
@@ -3702,7 +3687,7 @@ html:`
 
         <p class="text-gray-700 mb-6">
 
-            Los exámenes de suficiencia se desarrollarán de acuerdo con el siguiente calendario:
+            Los exámenes de suficiencia serán realizados de acuerdo con el siguiente cronograma:
 
         </p>
 
@@ -3789,7 +3774,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Beneficios y consideraciones importantes
+                <strong>Beneficios y consideraciones importantes</strong>
 
             </h3>
 
@@ -3808,8 +3793,7 @@ html:`
 
                 <p class="text-gray-700 leading-relaxed">
 
-                    Los estudiantes que aprobaron Matemáticas y/o Comunicaciones en el <strong>Programa de Nivelación Universitaria</strong> quedan automáticamente exonerados del examen correspondiente.
-
+                    Los estudiantes prematriculados que se hayan matriculado en el <strong>Programa de Nivelación Universitaria (PNU)</strong> y aprobado Matemáticas y/o Comunicaciones no deberán rendir el Examen de Suficiencia correspondiente a la asignatura aprobada.
                 </p>
 
             </div>
@@ -3825,7 +3809,7 @@ html:`
 
                 <p class="text-gray-700 leading-relaxed">
 
-                    Cada ingresante podrá rendir el examen hasta en <strong>dos oportunidades</strong>. La Universidad comunicará oportunamente qué fechas corresponden a cada convocatoria y quiénes podrán participar.
+                    Cada ingresante podrá rendir el Examen de Suficiencia hasta en <strong>dos oportunidades</strong>. La Universidad comunicará oportunamente qué fechas corresponden a la primera y segunda oportunidad, así como los supuestos en que proceda la participación en cada una de ellas.
 
                 </p>
 
@@ -3858,7 +3842,7 @@ html:`
 
                 <p class="text-gray-700 leading-relaxed">
 
-                    Si el estudiante no se presenta al examen o no alcanza la aprobación, será matriculado en el o los cursos correspondientes del <strong>Ciclo 0</strong>, de manera paralela con las demás asignaturas que no tengan dichos cursos como prerrequisito.
+                    Si el estudiante no se presenta al examen o no alcanza la aprobación, será matriculado en el o los cursos correspondientes del <strong>Ciclo 0</strong>, de manera paralela con las demás asignaturas que no tengan dichos cursos como requisito.
 
                 </p>
 
@@ -3888,7 +3872,7 @@ html:`
 
                 <p class="text-gray-700 leading-relaxed">
 
-                    Los exámenes de suficiencia permiten demostrar las competencias necesarias para exonerar los cursos de preformación sin costo adicional, facilitando un mejor avance dentro de la malla curricular desde el primer semestre.
+                    Los exámenes de suficiencia permiten demostrar las competencias necesarias para exonerar los cursos de preformación, sin costo adicional, y determinar qué áreas básicas necesitan reforzar.
 
                 </p>
 
@@ -3929,7 +3913,7 @@ html:`
                 </p>
 
                 <h2 class="text-3xl font-serif text-gray-900">
-                    Cursos de Extensión
+                    <strong>Cursos de Extensión</strong>
                 </h2>
 
                 <p class="text-gray-600 mt-1">
@@ -3954,7 +3938,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Amplía tus conocimientos
+                <strong>Amplía tus conocimientos</strong>
 
             </h3>
 
@@ -3964,7 +3948,7 @@ html:`
 
             <p>
 
-                La Universidad ESAN pone a disposición de sus estudiantes una amplia oferta de <strong>Cursos de Extensión</strong>, diseñados para complementar la formación académica, desarrollar nuevas competencias y fortalecer el perfil profesional.
+                La Universidad ESAN pone a disposición de sus estudiantes una amplia oferta de <strong>Cursos de Extensión</strong> (cursos adicionales), diseñados para complementar la formación académica, desarrollar nuevas competencias y fortalecer el perfil profesional.
 
             </p>
 
@@ -4090,37 +4074,6 @@ html:`
         </a>
 
     </div>
-
-
-    <!-- IMPORTANTE -->
-
-    <div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
-
-        <div class="flex items-start gap-4">
-
-            <i data-lucide="info"
-               class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
-
-            <div>
-
-                <h3 class="font-semibold text-gray-900 mb-2">
-
-                    Importante
-
-                </h3>
-
-                <p class="text-gray-700 leading-relaxed">
-
-                    La disponibilidad de cursos, modalidades, beneficios y descuentos puede variar durante el año. Se recomienda revisar periódicamente la información publicada por la Universidad ESAN antes de realizar la inscripción.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
 </div>
 
 `
@@ -4152,7 +4105,7 @@ html:`
                 </p>
 
                 <h2 class="text-3xl font-serif text-gray-900">
-                    Conocimiento del idioma inglés
+                    <strong>Conocimiento del idioma inglés</strong>
                 </h2>
 
                 <p class="text-gray-600 mt-1">
@@ -4177,7 +4130,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                ¿Por qué es importante el inglés?
+                <strong>¿Por qué es importante el inglés?</strong>
 
             </h3>
 
@@ -4187,14 +4140,12 @@ html:`
 
             <p>
 
-                El dominio del idioma inglés constituye una herramienta fundamental para la formación universitaria y el desarrollo profesional. Permite acceder a bibliografía especializada, participar en programas internacionales y ampliar las oportunidades laborales en un entorno global.
-
+Dominar el idioma inglés abre las puertas a oportunidades de estudio y trabajo en el extranjero, así como a la colaboración con personas de diferentes culturas y nacionalidades.
             </p>
 
             <p>
 
-                Durante la carrera se desarrollan asignaturas impartidas parcial o totalmente en inglés, por lo que contar con un adecuado nivel del idioma favorecerá un mejor desempeño académico.
-
+Asimismo, es importante tener en cuenta que durante la carrera se dictan cursos en idioma inglés, por lo que será necesario contar con un adecuado nivel de conocimiento del idioma.
             </p>
 
         </div>
@@ -4215,7 +4166,7 @@ html:`
 
                 <h3 class="text-xl font-serif text-gray-900">
 
-                    Examen clasificatorio
+                    <strong>Examen clasificatorio</strong>
 
                 </h3>
 
@@ -4256,7 +4207,7 @@ html:`
 
                 <h3 class="text-xl font-serif text-gray-900">
 
-                    Centro de Idiomas
+                    <strong>Centro de Idiomas</strong>
 
                 </h3>
 
@@ -4371,7 +4322,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Consultas
+                <strong>Consultas</strong>
 
             </h3>
 
@@ -4379,7 +4330,7 @@ html:`
 
         <p class="text-gray-700 mb-4">
 
-            Para consultas relacionadas con el Centro de Idiomas puedes comunicarte mediante el siguiente correo electrónico:
+            Para consultas relacionadas con el Centro de Idiomas, puedes comunicarte mediante el siguiente correo electrónico:
 
         </p>
 
@@ -4392,36 +4343,6 @@ html:`
             matriculaidiomas@esan.edu.pe
 
         </a>
-
-    </div>
-
-
-    <!-- IMPORTANTE -->
-
-    <div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
-
-        <div class="flex items-start gap-4">
-
-            <i data-lucide="info"
-               class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
-
-            <div>
-
-                <h3 class="font-semibold text-gray-900 mb-2">
-
-                    Importante
-
-                </h3>
-
-                <p class="text-gray-700 leading-relaxed">
-
-                    Desarrollar un adecuado nivel de inglés desde los primeros ciclos facilitará el aprovechamiento de las asignaturas impartidas en este idioma y ampliará las oportunidades académicas y profesionales durante tu formación en la Universidad ESAN.
-
-                </p>
-
-            </div>
-
-        </div>
 
     </div>
 
@@ -4460,7 +4381,7 @@ html:`
                 </p>
 
                 <h2 class="text-3xl font-serif text-gray-900">
-                    Postergación o término de los estudios y reserva de admisión
+                    <strong>Postergación o término de los estudios y reserva de admisión</strong>
                 </h2>
 
             </div>
@@ -4505,7 +4426,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Reserva de admisión
+                <strong>Reserva de admisión</strong>
 
             </h3>
 
@@ -4523,9 +4444,7 @@ html:`
 
             <p>
 
-                Si durante dicho periodo no registra matrícula,
-                la reserva caduca y deberá participar nuevamente
-                en un proceso de admisión.
+                Si el ingresante no registra su matrícula en uno de estos dos periodos, la reserva caduca y debe volver a postular para un siguiente periodo de admisión.
 
             </p>
 
@@ -4535,16 +4454,17 @@ html:`
 
             <h4 class="font-semibold text-gray-900 mb-4">
 
-                Requisitos
+                Requisitos para reservar su vacante
 
             </h4>
 
             <ul class="space-y-4">
 
-                <li class="flex gap-3">
+                <li class="flex items-start gap-3">
 
-                    <i data-lucide="check-circle"
-                       class="w-5 h-5 text-[var(--esan-red)] mt-1"></i>
+    <i data-lucide="check-circle"
+       class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
+
 
                     <span class="text-gray-700">
 
@@ -4556,15 +4476,15 @@ html:`
 
                 </li>
 
-                <li class="flex gap-3">
+                <li class="flex items-start gap-3">
 
                     <i data-lucide="mail"
-                       class="w-5 h-5 text-[var(--esan-red)] mt-1"></i>
+                       class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
 
                     <span class="text-gray-700">
 
-                        Enviar nombre completo, DNI y datos del padre,
-                        madre o apoderado al correo
+                        Remitir los datos de nombre completo, DNI y datos del padre,
+                        madre o apoderado al correo:
 
                         <a href="mailto:admisionpregrado_servicios@esan.edu.pe"
                            class="font-semibold text-[var(--esan-red)] hover:underline">
@@ -4590,13 +4510,13 @@ html:`
 
                 <h4 class="font-semibold text-gray-900">
 
-                    Plazo límite
+                    Plazo límite para la recepción de solicitudes
 
                 </h4>
 
                 <p class="text-gray-700">
 
-                    Viernes 7 de agosto de 2026 hasta las 12:00 p.m.
+                    Viernes 7 de agosto de 2026 hasta las 12:00 p.m. (mediodía)
 
                 </p>
 
@@ -4624,10 +4544,7 @@ html:`
 
             <p class="text-gray-700 leading-relaxed">
 
-                Al incorporarse luego de una reserva de admisión,
-                el estudiante acepta las disposiciones vigentes del
-                periodo académico, incluyendo posibles modificaciones
-                en la malla curricular, reglamentos y costos.
+                El alumno que se incorpora a su primera matrícula, luego de una Reserva de Admisión, deberá declarar conocer y aceptar las disposiciones vigentes del periodo y posibles actualizaciones en la malla curricular, costos, reglamento de estudios y otros que sean publicados en el portal de alumnos.
 
             </p>
 
@@ -4645,7 +4562,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Renuncia a la vacante
+               <strong>Renuncia a la vacante</strong>
 
             </h3>
 
@@ -4657,30 +4574,28 @@ html:`
 
                 Si el ingresante decide retirarse definitivamente del proceso de
                 admisión, podrá solicitar la renuncia a la vacante obtenida.
-                Esta decisión implica la pérdida del derecho de matrícula para
-                el periodo académico vigente.
+                Al renunciar a la vacante obtenida en una determinada carrera, pierde la misma y el derecho de matrícula para el período de admisión en curso.
 
             </p>
 
             <p>
 
-                La solicitud deberá enviarse al correo:
+                Para ello deberá comunicarse al correo:
 
                 <a href="mailto:admisionpregrado_servicios@esan.edu.pe"
                    class="font-semibold text-[var(--esan-red)] hover:underline">
 
-                    admisionpregrado_servicios@esan.edu.pe
+                    admisionpregrado_servicios@esan.edu.pe 
 
                 </a>
+				
 
             </p>
 
             <p>
 
-                En el mensaje deberá indicar el nombre completo y DNI del
-                ingresante. Si el estudiante es menor de edad, el correo deberá
-                ser enviado por el padre, madre o apoderado registrado durante
-                el proceso de admisión.
+                Solicitando la RENUNCIA DE VACANTE y en el mensaje detallar el nombre completo y DNI del
+                ingresante. Si el ingresante es menor de edad, el correo remitente debe ser del padre o apoderado del menor y puede ser copiado al correo del ingresante como referencia. La conformidad u observaciones al trámite serán enviadas al correo electrónico.
 
             </p>
 
@@ -4695,13 +4610,13 @@ html:`
 
                 <h4 class="font-semibold text-gray-900">
 
-                    Plazo límite
+                    Plazo límite para la recepción de solicitudes
 
                 </h4>
 
                 <p class="text-gray-700">
 
-                    Viernes 7 de agosto de 2026 hasta las 12:00 p.m.
+                    Viernes 7 de agosto de 2026 hasta las 12:00 p.m. (mediodía)
 
                 </p>
 
@@ -4729,9 +4644,7 @@ html:`
 
             <p class="text-gray-700 leading-relaxed">
 
-                La renuncia implica la pérdida definitiva de la vacante obtenida.
-                Si posteriormente desea estudiar en la Universidad ESAN,
-                deberá participar nuevamente en un proceso de admisión.
+                El ingresante que ha renunciado a la vacante pierde la plaza asignada. Luego del registro de renuncia ya no es posible gestionar matrícula para el periodo vigente, pero puede registrarse como postulante para un nuevo periodo de admisión de acuerdo con el proceso que corresponda.
 
             </p>
 
@@ -4772,7 +4685,7 @@ html:`
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                Retiro definitivo
+                <strong>Retiro definitivo</strong>
 
             </h3>
 
@@ -4782,17 +4695,13 @@ html:`
 
             <p>
 
-                Si el estudiante ya fue matriculado y desea retirarse
-                definitivamente de la Universidad ESAN, deberá comunicarlo
-                mediante una carta dirigida al Área de Servicios Académicos.
+                Si el alumno ya ha sido matriculado, cuenta con horario y decide retirarse definitivamente de la Universidad, debe comunicar su decisión al Área de Servicios Académicos mediante una carta en la que indique su retiro definitivo y la renuncia a su condición de alumno de la Universidad ESAN.
 
             </p>
 
             <p>
 
-                Asimismo, deberá cancelar las boletas vencidas hasta la fecha
-                de presentación de la solicitud de retiro.
-
+                En ese caso deberá pagar hasta las boletas vencidas a la fecha de presentación de su solicitud de retiro definitivo.
             </p>
 
         </div>
@@ -4815,11 +4724,7 @@ html:`
 
             <p class="text-gray-700 leading-relaxed">
 
-                Un estudiante que solicite su retiro definitivo no podrá
-                reincorporarse posteriormente. Si desea volver a estudiar
-                en la Universidad ESAN deberá participar nuevamente
-                en un proceso de admisión y cumplir con los requisitos
-                vigentes para dicho periodo académico.
+               No se aceptará la reincorporación de un alumno que haya solicitado su retiro definitivo; por lo que deberá rendir el examen de admisión como cualquier postulante nuevo.
 
             </p>
 
@@ -5202,64 +5107,74 @@ XII: {
     </div>
 
 
-    <!-- Notas -->
+   <!-- Notas -->
 
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+<div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
 
-        <h3 class="text-xl font-serif text-gray-900 mb-4">
-            Notas importantes
-        </h3>
+    <h3 class="text-xl font-serif text-gray-900 mb-4">
+        <strong>Notas importantes</strong>
+    </h3>
 
-        <div class="space-y-4">
+    <div class="space-y-4">
 
-            <div class="flex gap-3">
-                <i data-lucide="info"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-0.5"></i>
+        <div class="flex items-start gap-3">
 
-                <p class="text-gray-700">
-                    <strong>(2)</strong> Durante los feriados del periodo se suspenden todas las actividades académicas y de complemento curricular.
-                </p>
-            </div>
+            <i data-lucide="info"
+               class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
 
-            <div class="flex gap-3">
-                <i data-lucide="info"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-0.5"></i>
+            <p class="text-gray-700">
+                <strong>(2)</strong> Durante los feriados del periodo se suspenden todas las actividades académicas y de complemento curricular.
+            </p>
 
-                <p class="text-gray-700">
-                    <strong>(3)</strong> Durante la semana de evaluaciones finales se suspenden las clases.
-                </p>
-            </div>
+        </div>
 
-            <div class="flex gap-3">
-                <i data-lucide="info"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-0.5"></i>
+        <div class="flex items-start gap-3">
 
-                <p class="text-gray-700">
-                    <strong>(4)</strong> Sólo para aquellos alumnos que reciban la confirmación de autorización para la evaluación de rezagados.
-                </p>
-            </div>
+            <i data-lucide="info"
+               class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
 
-            <div class="flex gap-3">
-                <i data-lucide="info"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-0.5"></i>
+            <p class="text-gray-700">
+                <strong>(3)</strong> Durante la semana de evaluaciones finales se suspenden las clases.
+            </p>
 
-                <p class="text-gray-700">
-                    <strong>(5)</strong> Las solicitudes de primer y segundo reclamo se presentan de acuerdo con el procedimiento establecido por la Oficina de Servicios Académicos. No se aceptan solicitudes fuera de la fecha indicada.
-                </p>
-            </div>
+        </div>
 
-            <div class="flex gap-3">
-                <i data-lucide="info"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-0.5"></i>
+        <div class="flex items-start gap-3">
 
-                <p class="text-gray-700">
-                    <strong>(6)</strong> Se suspende la atención a alumnos desde el 21 de diciembre al 03 de enero de 2027.
-                </p>
-            </div>
+            <i data-lucide="info"
+               class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
+
+            <p class="text-gray-700">
+                <strong>(4)</strong> Sólo para aquellos alumnos que reciban la confirmación de autorización para la evaluación de rezagados.
+            </p>
+
+        </div>
+
+        <div class="flex items-start gap-3">
+
+            <i data-lucide="info"
+               class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
+
+            <p class="text-gray-700">
+                <strong>(5)</strong> Las solicitudes de primer y segundo reclamo se presentan de acuerdo con el procedimiento establecido por la oficina de Servicios Académicos. No se aceptan solicitudes fuera de la fecha.
+            </p>
+
+        </div>
+
+        <div class="flex items-start gap-3">
+
+            <i data-lucide="info"
+               class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
+
+            <p class="text-gray-700">
+                <strong>(6)</strong> Se suspende la atención a alumnos desde el 21 de diciembre al 03 de enero de 2027.
+            </p>
 
         </div>
 
     </div>
+
+</div>
 
 </div>`
 
@@ -5311,10 +5226,7 @@ XIII: {
                 </div>
 
                 <p class="text-gray-700 leading-relaxed">
-                    La Universidad podrá actualizar las direcciones electrónicas,
-                    procedimientos, cronogramas y canales de atención señalados en el
-                    presente documento. Cualquier modificación será comunicada a través
-                    de los canales institucionales correspondientes.
+                    La Universidad podrá actualizar las direcciones electrónicas, procedimientos, cronogramas y canales de atención señalados en el presente documento. Cualquier modificación será comunicada a través de los canales institucionales correspondientes.
                 </p>
 
             </li>
@@ -5326,31 +5238,12 @@ XIII: {
                 </div>
 
                 <p class="text-gray-700 leading-relaxed">
-                    La información contenida en el presente documento tiene carácter
-                    informativo y complementario. En caso de discrepancia entre lo
-                    señalado en este documento y las disposiciones contenidas en el
-                    Reglamento General de Estudios, Reglamento de Admisión,
-                    reglamentos especiales, directivas institucionales o cualquier otra
-                    normativa vigente de la Universidad ESAN, prevalecerán estas
-                    últimas, así como las disposiciones legales aplicables.
+                    La información contenida en el presente documento tiene carácter informativo y complementario. En caso de discrepancia entre lo señalado en este documento y las disposiciones contenidas en el Reglamento General de Estudios, Reglamento de Admisión, reglamentos especiales, directivas institucionales o cualquier otra normativa vigente de la Universidad ESAN, prevalecerán estas últimas, así como las disposiciones legales aplicables.
                 </p>
 
             </li>
 
         </ol>
-
-    </div>
-
-    <div class="bg-[var(--esan-blue-light)] border-l-4 border-[var(--esan-red)] rounded-xl p-5 flex gap-3">
-
-        <i data-lucide="shield-check"
-           class="w-5 h-5 text-[var(--esan-red)] mt-1"></i>
-
-        <p class="text-gray-800 text-sm leading-relaxed">
-            Estas disposiciones complementan la información presentada en esta guía y
-            deben interpretarse conjuntamente con la normativa institucional vigente
-            de la Universidad ESAN.
-        </p>
 
     </div>
 
