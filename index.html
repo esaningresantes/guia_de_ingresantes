@@ -418,7 +418,7 @@ html: `
 
             <div class="flex items-start gap-3">
 
-                <i data-lucide="calendar-days" class="w-6 h-6 mt-1"></i>
+                <i data-lucide="calendar-days" class="w-6 h-6 mt-1 shrink-0"></i>
 
                 <div>
 
@@ -616,7 +616,7 @@ html: `
             <i data-lucide="check-circle"
                class="w-5 h-5 shrink-0 text-[var(--esan-red)] mt-1"></i>
             <span class="text-gray-700">
-                Efectuar el pago por el trámite de convalidación y remitir el comprobante correspondiente (aplica para Traslados Externos).
+                Efectuar el pago por el trámite de convalidación y remitir el comprobante correspondiente (solo aplica para Traslados Externos, no para Bachillerato Internacional).
             </span>
         </div>
 
@@ -631,28 +631,31 @@ html: `
     </div>
 
 </div>
-    <!-- IMPORTANTE -->
+<!-- IMPORTANTE -->
 
-    <div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
+<div class="rounded-2xl overflow-hidden shadow-xl">
 
-        <div class="flex items-center gap-3 mb-3">
+    <div class="bg-gradient-to-r from-[var(--esan-red)] to-[var(--esan-red-dark)] px-8 py-6 text-white">
 
-            <i data-lucide="triangle-alert"
-               class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <div class="flex items-start gap-4">
 
-            <h3 class="text-lg font-serif text-[var(--esan-red)]">
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                <i data-lucide="triangle-alert" class="w-6 h-6"></i>
+            </div>
 
-                <strong>Importante</strong>
+            <div>
 
-            </h3>
+                <p class="uppercase tracking-widest text-white/80 text-sm">
+                    <strong>Importante</strong>
+                </p>
+
+                <p class="text-white/90 mt-2 leading-relaxed">
+                    La matrícula no será completada hasta que el ingresante cumpla con la entrega de todos los requisitos establecidos. El estudiante deberá estar atento a las fechas límite de entrega de documentos indicadas por los(as) asesores(as) de inscripción y comunicadas a sus correos electrónicos. Toda la documentación deberá ser entregada antes del inicio de la Semana de Inducción.
+                </p>
+
+            </div>
 
         </div>
-
-        <p class="text-[var(--esan-red)]  leading-relaxed">
-
-            La matrícula no será completada hasta que el ingresante cumpla con la entrega de todos los requisitos establecidos. El estudiante deberá estar atento a las fechas límite de entrega de documentos indicadas por los(as) asesores(as) de inscripción y comunicadas a sus correos electrónicos. Toda la documentación deberá ser entregada antes del inicio de la Semana de Inducción.
-
-        </p>
 
     </div>
 
@@ -1050,17 +1053,41 @@ html: `
 
         <p class="text-gray-700 leading-relaxed mb-5">
 
-            Son aquellos cobros que incluyen las cuotas por los derechos académicos y el derecho de matrícula, el cual corresponde a un pago único por semestre académico.
+            Son aquellos cobros que incluyen la matrícula y las cuotas por los derechos académicos:
         </p>
 		
 		<p class="text-gray-700 leading-relaxed mb-5">
 
-           <strong>i. Matrícula:</strong> Al iniciar cada semestre académico, los alumnos deberán efectuar el pago del <strong>derecho de matrícula de S/375.00 (Trescientos Setenta y Cinco con 00/100 Soles). El pago efectuado por este concepto no es materia de devolución, salvo en aquellos casos previstos por la normativa aplicable o cuando la Universidad determine expresamente la procedencia de la devolución.</strong>
+           <strong>i. Matrícula:</strong> Al iniciar cada semestre académico, los alumnos deberán efectuar el pago del <strong>derecho de matrícula de S/375.00 (Trescientos Setenta y Cinco con 00/100 Soles). Este concepto corresponde a un pago único por semestre y no está sujeto a devolución, salvo en aquellos casos previstos por la normativa aplicable o cuando la Universidad determine expresamente la procedencia de la devolución.</strong>
         </p>
 		
 		<p class="text-gray-700 leading-relaxed">
 		<strong>ii. Cuotas por derechos académicos:</strong> Las cuotas por derechos académicos son calculadas en función al valor de la escala de pagos asignada y al número de créditos en que el alumno se matricule.
 		</p>
+
+<!-- AVISO IMPORTANTE -->
+
+<div class="mt-6 bg-red-50 border border-red-100 rounded-xl px-5 py-4">
+
+    <div class="flex items-start gap-3">
+
+        <i data-lucide="circle-alert" class="w-6 h-6 mt-1 shrink-0 text-[var(--esan-red)]"></i>
+
+        <div>
+
+            <p class="font-semibold text-lg text-[var(--esan-red)]">
+                Importante:
+            </p>
+
+            <p class="text-gray-700">
+                El pago de la primera boleta es requisito indispensable para efectuar la matrícula.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
     </div>
 
     <!-- RESUMEN -->
