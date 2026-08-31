@@ -967,40 +967,47 @@ html:`
 
     </div>
 
-    <!-- IMPORTANTE -->
+<!-- IMPORTANTE -->
 
-    <div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
+<div class="rounded-2xl overflow-hidden shadow-xl">
 
-        <div class="flex items-center gap-3 mb-5">
+    <div class="bg-gradient-to-r from-[var(--esan-red)] to-[var(--esan-red-dark)] px-8 py-6 text-white">
 
-            <i data-lucide="triangle-alert"
-               class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <div class="flex items-start gap-4">
 
-            <h3 class="text-xl font-serif text-[var(--esan-red)]">
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                <i data-lucide="triangle-alert" class="w-6 h-6"></i>
+            </div>
 
-                <strong>Importante</strong>
+            <div class="flex-1">
 
-            </h3>
+                <p class="uppercase tracking-widest text-white/80 text-sm mb-3">
+                    <strong>Importante</strong>
+                </p>
+
+                <ul class="list-disc pl-6 space-y-3 text-white/90 leading-relaxed">
+
+                    <li>
+                        La solicitud de revisión de escala no conlleva necesariamente un cambio de categoría.
+                    </li>
+
+                    <li>
+                        Los resultados de la reevaluación serán entregados al finalizar el semestre en el que se realizó el trámite.
+                    </li>
+
+                    <li>
+                        Si la solicitud es aprobada, la nueva categoría será aplicada desde el siguiente semestre académico.
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
-        <ul class="list-disc pl-6 space-y-3 text-[var(--esan-red)]  leading-relaxed">
-
-            <li>
-                La solicitud de revisión de escala no conlleva necesariamente un cambio de categoría.
-            </li>
-
-            <li>
-                Los resultados de la reevaluación serán entregados al finalizar el semestre en el que se realizó el trámite.
-            </li>
-
-            <li>
-                Si la solicitud es aprobada, la nueva categoría será aplicada desde el siguiente semestre académico.
-            </li>
-
-        </ul>
-
     </div>
+
+</div>
 
 </div>
 
@@ -1037,7 +1044,7 @@ html: `
 
                 <h2 class="text-3xl font-serif text-gray-900">
 
-                    <strong>Cobros por concepto de servicios académicos (*)</strong>
+                    <strong>Cobros por concepto de servicios académicos<sup>*</sup></strong>
 
                 </h2>
 
@@ -1067,11 +1074,12 @@ html: `
 
 <!-- AVISO IMPORTANTE -->
 
-<div class="mt-6 bg-red-50 border border-red-100 rounded-xl px-5 py-4">
+<div class="mt-6 bg-red-100 border border-red-200 rounded-xl px-5 py-4">
 
     <div class="flex items-start gap-3">
 
-        <i data-lucide="circle-alert" class="w-6 h-6 mt-1 shrink-0 text-[var(--esan-red)]"></i>
+        <i data-lucide="circle-alert"
+           class="w-6 h-6 mt-1 shrink-0 text-[var(--esan-red)]"></i>
 
         <div>
 
@@ -1088,6 +1096,7 @@ html: `
     </div>
 
 </div>
+
     </div>
 
     <!-- RESUMEN -->
@@ -1545,7 +1554,7 @@ html: `
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                <strong>Casos excepcionales (*)</strong>
+                <strong><sup>*</sup>Casos excepcionales</strong>
 
             </h3>
 
@@ -2760,17 +2769,6 @@ html: `
 
                 </p>
 
-                <button
-                    onclick="renderContent('VII')"
-                    class="inline-flex items-center gap-2 font-semibold text-[var(--esan-red)] hover:underline">
-
-                    <i data-lucide="external-link"
-                       class="w-4 h-4"></i>
-
-                    Ver sección VII
-
-                </button>
-
             </div>
 
             <!-- EXAMEN -->
@@ -2791,17 +2789,6 @@ html: `
                     También es posible demostrar las competencias mediante los exámenes de suficiencia.
 
                 </p>
-
-                <button
-                    onclick="renderContent('VIII')"
-                    class="inline-flex items-center gap-2 font-semibold text-[var(--esan-red)] hover:underline">
-
-                    <i data-lucide="external-link"
-                       class="w-4 h-4"></i>
-
-                    Ver sección VIII
-
-                </button>
 
             </div>
 
@@ -2864,7 +2851,7 @@ html: `
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                <strong>Relación con la malla académica</strong>
+                <strong>Relación con la malla curricular</strong>
 
             </h3>
 
@@ -2885,13 +2872,13 @@ html: `
 
                 <h4 class="font-semibold text-gray-900 mb-3">
 
-                    Promedio
+                    Notas
 
                 </h4>
 
                 <p class="text-sm text-gray-700 leading-relaxed">
 
-                    Los créditos de los cursos de preformación no forman parte del promedio ponderado general.
+                    Las notas obtenidas en los cursos de preformación no forman parte del promedio ponderado general del estudiante ni se incorporan al total de créditos requeridos para su graduación.
 
                 </p>
 
@@ -2904,14 +2891,14 @@ html: `
 
                 <h4 class="font-semibold text-gray-900 mb-3">
 
-                    Créditos 
+                    Cantidad de cursos
 
                 </h4>
 
                 <p class="text-sm text-gray-700 leading-relaxed">
 
-                    Los créditos de estos cursos no se consideran para el total de créditos requeridos para obtener el grado académico; sin embargo, los cursos sí son considerados para el cumplimiento del número de asignaturas exigidas por el plan de estudios.
-
+                 Si bien los cursos de preformación no otorgan créditos académicos, son considerados para el cumplimiento del número de asignaturas establecidas en el plan de estudios.
+				 
                 </p>
 
             </div>
@@ -2939,24 +2926,35 @@ html: `
 
     </div>
 
-    <!-- IMPORTANTE -->
+<!-- IMPORTANTE -->
 
-<div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
+<div class="rounded-2xl overflow-hidden shadow-xl">
 
-    <div class="flex items-center gap-3 mb-3">
+    <div class="bg-gradient-to-r from-[var(--esan-red)] to-[var(--esan-red-dark)] px-8 py-6 text-white">
 
-        <i data-lucide="triangle-alert"
-           class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <div class="flex items-start gap-4">
 
-        <h3 class="text-lg font-serif text-[var(--esan-red)]">
-            <strong>Importante</strong>
-        </h3>
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+
+                <i data-lucide="triangle-alert" class="w-6 h-6"></i>
+
+            </div>
+
+            <div class="flex-1">
+
+                <p class="uppercase tracking-widest text-white/80 text-sm mb-3">
+                    <strong>Importante</strong>
+                </p>
+
+                <p class="text-white/90 leading-relaxed">
+                    Los cursos de preformación son requisitos porque la universidad tiene el deber de garantizar que los estudiantes cuenten con las bases necesarias para adquirir los conocimientos y habilidades que se les brinda a lo largo de su carrera.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-    <p class="text-[var(--esan-red)] leading-relaxed">
-        Los cursos de preformación son requisitos porque la universidad tiene el deber de garantizar que los estudiantes cuenten con las bases necesarias para adquirir los conocimientos y habilidades que se les brinda a lo largo de su carrera.
-    </p>
 
 </div>
 
@@ -3091,7 +3089,7 @@ html: `
 
             <h3 class="text-xl font-serif text-gray-900">
 
-                <strong> Cursos del programa (*) </strong>
+                <strong> Cursos del programa<sup>*</sup> </strong>
 
             </h3>
 
@@ -3576,7 +3574,7 @@ Solicitar a su asesor(a) de inscripción o asesor(a) de ventas el enlace del for
 
             <h3 class="text-xl font-serif text-gray-900">
 
-               <strong> Condiciones (*) </strong>
+               <strong> <sup>*</sup>Condiciones </strong>
 
             </h3>
 
@@ -3596,28 +3594,39 @@ Solicitar a su asesor(a) de inscripción o asesor(a) de ventas el enlace del for
 
     </div>
 
-   <!-- IMPORTANTE -->
+<!-- IMPORTANTE -->
 
-<div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
+<div class="rounded-2xl overflow-hidden shadow-xl">
 
-    <div class="flex items-center gap-3 mb-3">
+    <div class="bg-gradient-to-r from-[var(--esan-red)] to-[var(--esan-red-dark)] px-8 py-6 text-white">
 
-        <i data-lucide="triangle-alert"
-           class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <div class="flex items-start gap-4">
 
-        <h3 class="text-lg font-serif text-[var(--esan-red)]">
-            <strong>Importante</strong>
-        </h3>
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+
+                <i data-lucide="triangle-alert" class="w-6 h-6"></i>
+
+            </div>
+
+            <div class="flex-1">
+
+                <p class="uppercase tracking-widest text-white/80 text-sm mb-3">
+                    <strong>Importante</strong>
+                </p>
+
+                <p class="text-white/90 leading-relaxed mb-4">
+                    La apertura de horarios estará sujeta a la cantidad de estudiantes inscritos en cada versión del Programa de Nivelación Universitaria (PNU).
+                </p>
+
+                <p class="text-white/90 leading-relaxed">
+                    Solicita el enlace de inscripción a tu asesor(a) de inscripciones o asesor(a) de ventas.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-    <p class="text-[var(--esan-red)]  leading-relaxed mb-4">
-        La apertura de horarios estará sujeta a la cantidad de estudiantes inscritos en cada versión del Programa de Nivelación Universitaria (PNU).
-    </p>
-
-    <p class="text-[var(--esan-red)]  leading-relaxed">
-        <strong>(**) Solicita el enlace de inscripción a tu asesor(a) de inscripciones o asesor(a) de ventas.</strong>
-    </p>
 
 </div>
 </div>
@@ -3742,12 +3751,12 @@ html:`
 
         </div>
 
-        <div class="mt-6 bg-gray-50 rounded-xl border border-gray-200 p-5">
+        <div class="mt-6 bg-red-50 rounded-xl border border-red-100 p-5">
 
             <div class="flex items-center gap-3">
 
                 <i data-lucide="badge-check"
-                   class="w-5 h-5 text-[var(--esan-red)]"></i>
+                   class="w-5 h-5 shrink-0 text-[var(--esan-red)]"></i>
 
                 <p class="text-gray-700">
 
@@ -3972,27 +3981,28 @@ html:`
     </div>
 
 
-    <!-- IMPORTANTE -->
+<!-- IMPORTANTE -->
 
-    <div class="rounded-2xl bg-red-50 border-l-4 border-[var(--esan-red)] p-6">
+<div class="rounded-2xl overflow-hidden shadow-xl">
+
+    <div class="bg-gradient-to-r from-[var(--esan-red)] to-[var(--esan-red-dark)] px-8 py-6 text-white">
 
         <div class="flex items-start gap-4">
 
-            <i data-lucide="triangle-alert"
-               class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
 
-            <div>
+                <i data-lucide="triangle-alert" class="w-6 h-6"></i>
 
-                <h3 class="font-semibold text-[var(--esan-red)]  mb-2">
+            </div>
 
-                    Importante
+            <div class="flex-1">
 
-                </h3>
+                <p class="uppercase tracking-widest text-white/80 text-sm mb-3">
+                    <strong>Importante</strong>
+                </p>
 
-                <p class="text-[var(--esan-red)]  leading-relaxed">
-
+                <p class="text-white/90 leading-relaxed">
                     Los exámenes de suficiencia permiten demostrar las competencias necesarias para exonerar los cursos de preformación, sin costo adicional, y determinar qué áreas básicas necesitan reforzar.
-
                 </p>
 
             </div>
@@ -4000,6 +4010,8 @@ html:`
         </div>
 
     </div>
+
+</div>
 
 </div>
 
