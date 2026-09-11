@@ -1065,7 +1065,7 @@ html: `
 		
 		<p class="text-gray-700 leading-relaxed mb-5">
 
-           <strong>i. Matrícula:</strong> Al iniciar cada semestre académico, los alumnos deberán efectuar el pago del <strong>derecho de matrícula de S/375.00 (Trescientos Setenta y Cinco con 00/100 Soles). Este concepto corresponde a un pago único por semestre y no está sujeto a devolución, salvo en aquellos casos previstos por la normativa aplicable o cuando la Universidad determine expresamente la procedencia de la devolución.</strong>
+           <strong>i. Matrícula:</strong> Al iniciar cada semestre académico, los alumnos deberán efectuar el pago del <strong>derecho de matrícula de S/375.00 (Trescientos Setenta y Cinco con 00/100 Soles). <u>Este concepto corresponde a un pago único por semestre y no está sujeto a devolución, salvo en aquellos casos previstos por la normativa aplicable o cuando la Universidad determine expresamente la procedencia de la devolución.</u></strong>
         </p>
 		
 		<p class="text-gray-700 leading-relaxed">
@@ -1656,7 +1656,8 @@ html: `
             Descuentos aplicables a hijos y cónyuges de egresados de MBA - PADE. El descuento se aplica sobre los derechos académicos, según el programa cursado por el familiar egresado.
 
         </p>
-
+		
+<!-- NOTA SOBRE PROPUESTAS DE DESCUENTO
         <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
 
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md transition">
@@ -1734,83 +1735,164 @@ html: `
         </div>
 
     </div>
+	 -->
+
+	 <!-- DESCUENTO ESTABLECIDOS -->
+
+<div class="grid md:grid-cols-2 gap-6">
+
+    <!-- DESCUENTO 20% -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md transition">
+
+        <p class="text-5xl font-bold text-[var(--esan-red)]">
+            20%
+        </p>
+
+        <div class="w-10 h-1 rounded-full bg-[var(--esan-red)] mx-auto my-4"></div>
+
+        <p class="text-sm text-gray-700 leading-relaxed">
+            Hijos y cónyuge de graduados de las Maestrías ofrecidas en ESAN,
+            tanto graduados del MBA como de las maestrías funcionales dictadas
+            en Lima o en provincias.
+        </p>
+
+    </div>
+
+    <!-- DESCUENTO 10% -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md transition">
+
+        <p class="text-5xl font-bold text-[var(--esan-red)]">
+            10%
+        </p>
+
+        <div class="w-10 h-1 rounded-full bg-[var(--esan-red)] mx-auto my-4"></div>
+
+        <p class="text-sm text-gray-700 leading-relaxed">
+            Hijos y cónyuge de graduados en algún PADE o de alumnos de alguna
+            de las Maestrías ofrecidas en ESAN.
+            <strong>
+                En el caso de los PADES, el descuento no aplica si el pago del mismo
+                fue realizado por la organización, empresa o institución donde
+                laboran o laboraban los graduados del programa.
+            </strong>
+        </p>
+
+    </div>
+
+</div>
+</div>
+
 <!-- REGLAS GENERALES -->
 
-    <div class="glass rounded-2xl p-8 border-l-4 border-[var(--esan-red)]">
+<div class="glass rounded-2xl p-8 border-l-4 border-[var(--esan-red)]">
 
-        <div class="flex items-center gap-3 mb-6">
+    <div class="flex items-start gap-3 mb-6">
 
-            <i data-lucide="clipboard-list"
-               class="w-6 h-6 text-[var(--esan-red)]"></i>
+        <i data-lucide="clipboard-list"
+           class="w-6 h-6 text-[var(--esan-red)] shrink-0 mt-0.5"></i>
 
-            <h3 class="text-xl font-serif text-gray-900">
+        <h3 class="text-xl font-serif text-gray-900">
+            <strong>Reglas generales para la aplicación de descuentos a hijos y cónyuges:</strong>
+        </h3>
 
-                <strong>Reglas generales para la aplicación de descuentos a hijos y cónyuges:</strong>
+    </div>
 
-            </h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
+        Los descuentos mencionados deben ser gestionados por el alumno ante el Área de Bienestar Estudiantil y serán aplicados bajo las siguientes reglas:
+    </p>
+
+    <div class="space-y-6">
+
+        <!-- ALUMNOS INGRESANTES -->
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+
+            <div class="flex items-start gap-3 mb-3">
+
+                <i data-lucide="user-plus"
+                   class="w-5 h-5 text-[var(--esan-red)] shrink-0 mt-0.5"></i>
+
+                <h4 class="font-semibold text-gray-900">
+                    A) Alumnos ingresantes
+                </h4>
+
+            </div>
+
+            <p class="text-gray-700 leading-relaxed">
+                El descuento se aplicará a partir de la tercera boleta, de manera retroactiva. Es decir, en dicha boleta se reconocerá el monto correspondiente al descuento que hubiera sido aplicable en la primera y segunda boleta.
+            </p>
 
         </div>
 
-        <div class="space-y-5">
+        <!-- ALUMNOS DESDE SEGUNDO CICLO -->
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
 
-            <div class="flex items-start gap-3">
+            <div class="flex items-start gap-3 mb-3">
 
-                <i data-lucide="check-circle"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
+                <i data-lucide="graduation-cap"
+                   class="w-5 h-5 text-[var(--esan-red)] shrink-0 mt-0.5"></i>
 
-                <p class="text-gray-700">
-                    Desde la tercera boleta, en forma retroactiva, sólo en el primer semestre. A partir del siguiente semestre el descuento se aplicará desde la primera boleta.
+                <h4 class="font-semibold text-gray-900">
+                    B) Alumnos a partir del segundo ciclo
+                </h4>
+
+            </div>
+
+            <p class="text-gray-700 leading-relaxed">
+                Los descuentos se activan desde el semestre en que son solicitados por el alumno. En estos casos, no corresponde la aplicación retroactiva a semestres anteriores.
+            </p>
+
+        </div>
+
+        <!-- IMPORTANTE -->
+        <div class="bg-red-50 border-l-4 border-[var(--esan-red)] rounded-r-xl p-5">
+
+            <div class="flex items-start gap-3 mb-4">
+
+                <i data-lucide="circle-alert"
+                   class="w-5 h-5 text-[var(--esan-red)] shrink-0 mt-0.5"></i>
+
+                <p class="font-semibold text-[var(--esan-red)]">
+                    Importante
                 </p>
 
             </div>
 
-            <div class="flex items-start gap-3">
+            <div class="space-y-3">
 
-                <i data-lucide="check-circle"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check-circle"
+                       class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
 
-                <p class="text-gray-700">
-                   Los descuentos mencionados se aplican sobre el valor de cada cuota, según la categoría asignada al alumno.
-                </p>
+                    <p class="text-gray-700">
+                        No son acumulables con otros descuentos comerciales.
+                    </p>
+                </div>
 
-            </div>
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check-circle"
+                       class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
 
-            <div class="flex items-start gap-3">
+                    <p class="text-gray-700">
+                        Serán aplicados únicamente sobre los primeros 210 créditos académicos.
+                    </p>
+                </div>
 
-                <i data-lucide="check-circle"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check-circle"
+                       class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
 
-                <p class="text-gray-700">
-                    Los descuentos se aplican únicamente a los primeros 200 créditos académicos matriculados.
-                </p>
-
-            </div>
-
-            <div class="flex items-start gap-3">
-
-                <i data-lucide="check-circle"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
-
-                <p class="text-gray-700">
-                   Los descuentos se activan desde el semestre en que son solicitados por el alumno; en este sentido, estos no serán de aplicación retroactiva.
-                </p>
-
-            </div>
-
-            <div class="flex items-start gap-3">
-
-                <i data-lucide="check-circle"
-                   class="w-5 h-5 text-[var(--esan-red)] mt-1 flex-shrink-0"></i>
-
-                <p class="text-gray-700">
-                    Los descuentos no son acumulativos. En caso de contar con un descuento comercial, no se aplican los descuentos mencionados (Descuentos para hijos y cónyuge de egresados de MBA - PADE).
-                </p>
+                    <p class="text-gray-700">
+                        Se aplican sobre el valor de cada cuota, según la categoría asignada al alumno.
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
     </div>
+
+</div>
 
     <!-- HERMANOS Y PRONTO PAGO -->
 	<div class="space-y-6">
@@ -1839,7 +1921,9 @@ html: `
                 </li>
 
                 <li>
-                   La reducción se aplicará a partir de la tercera boleta de manera retroactiva.
+                   La reducción se aplicará a partir de la tercera boleta de manera retroactiva. Es decir, en
+dicha boleta se reconocerá el monto correspondiente al descuento que hubiera sido
+aplicable en la primera y segunda boleta.
                 </li>
 
                 <li>
